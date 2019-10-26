@@ -1,2 +1,6 @@
 name: CodeNarc
 markdown: kramdown
+
+sidebar:
+  title: "Sample Title"
+  nav: sidebar-nav
