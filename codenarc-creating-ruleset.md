@@ -13,7 +13,7 @@ title: CodeNarc - Creating a RuleSet
 
   * [Creating an XML RuleSet File](#CreatingAnXmlRuleSetFile)
 
-<a name="NewAndImproved">
+<a name="NewAndImproved"/>
 ## New and Improved Way To Configure a RuleSet
 
 **NEW!** The preferred way to configure the rules that **CodeNarc** will use is to create a custom
@@ -41,7 +41,7 @@ You can also continue to use the predefined *RuleSets* distributed with **CodeNa
 provided out of the box by **CodeNarc**.
 
 
-<a name="CreatingAGroovyRuleSetFile">
+<a name="CreatingAGroovyRuleSetFile"/>
 ## Creating a Groovy RuleSet File
 
 **CodeNarc** provides a Groovy DSL (domain-specific language) for defining *RuleSets*.
@@ -184,7 +184,7 @@ About the "inner" **ruleset** statements:
 
       2. **Rule Filtering (include or exclude statements)** -- A **ruleset** statement can
           optionally specify **include** and/or **exclude** pattern(s) of rule names to include or exclude
-          from the *RuleSet*. See {{{Filtering_Rules_Within_a_RuleSet}Filtering Rules Within a RuleSet}}.
+          from the *RuleSet*. See [Filtering Rules Within a RuleSet](#Filtering_Rules_Within_a_RuleSet).
 
 About the **rule** statements:
 
@@ -206,7 +206,7 @@ About the **rule** statements:
     *long* or *boolean*.
 
 
-<a name="CreatingAnXmlRuleSetFile">
+<a name="CreatingAnXmlRuleSetFile"/>
 ## Creating an XML RuleSet File
 
 The XML schema for a **CodeNarc** *RuleSet* file is embodied in the "ruleset-schema.xsd" file which
@@ -305,6 +305,7 @@ About the `<rule-script>` elements:
     `<property>` element within a \*rule-script\* the same way you can for
     a `<rule>`. That is not shown here.
 
+<a name="Filtering_Rules_Within_a_RuleSet"/>
 ## Filtering Rules Within a RuleSet
 
 You can use the `<include>` and `<exclude>` elements within a `<ruleset-ref>` to filter a *RuleSet*
