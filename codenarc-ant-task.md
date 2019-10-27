@@ -39,11 +39,11 @@ The **CodeNarc** Ant Task is implemented by the `org.codenarc.ant.CodeNarcTask` 
 |                        | If set, then all violations specified within that report are   |                        |
 |                        | excluded (filtered) from the current **CodeNarc** run. If      |                        |
 |                        | null/empty, then do nothing. See                               |                        |
-|                        | {{{./codenarc-BaselineXmlReportWriter.html}Baseline Report}}.  |                        |
+|                        | [Baseline Report](./codenarc-BaselineXmlReportWriter.html).    |                        |
 |------------------------|----------------------------------------------------------------|------------------------|
 | classpathRef           | The reference to a path element which is to be used as         | NO                     |
 |                        | classpath when compiling analysed sources (useful with         |                        |
-|                        | {{{./codenarc-enhanced-classpath-rules.html} Enhanced Classpath Rules}}).               |
+|                        | [Enhanced Classpath Rules](./codenarc-enhanced-classpath-rules.html)). |                |
 |------------------------|----------------------------------------------------------------|------------------------|
 | failOnError            | Boolean that indicates whether to terminate and fail the task  | NO                     |
 |                        | (throwing a `BuildException`) if any errors occur parsing      |                        |
@@ -75,22 +75,22 @@ Notes:
 
 The `<option>` element is a child of the `<report>` element and defines a
 report-specific option for a report. You specify the option *name* and *value* as attributes
-within the `<option>` element. See the {{{Example}Example}} below.
+within the `<option>` element. See the *Example* below.
 
 
 ## Fileset Nested Element
 
 At least one **fileset** nested element is required, and is used to specify the source files that
 **CodeNarc** should analyze. This is the standard Ant `<FileSet>`, and is quite powerful and flexible.
-See the {{{http://ant.apache.org/manual/index.html}Apache Ant Manual}} for more information on `<FileSets>`.
+See the [Apache Ant Manual](http://ant.apache.org/manual/index.html) for more information on `<FileSets>`.
 
 
 ## Classpath Nested Element
 
 An optional **classpath** nested element can be utilized to specify contents of the classpath to be used when
 **CodeNarc** compiles classes it analyses. Having control over that classpath is essential when using
-{{{./codenarc-enhanced-classpath-rules.html} Enhanced Classpath Rules}}. It is a standard
-{{{https://ant.apache.org/manual/using.html#path}Ant <Path> element}}.
+[Enhanced Classpath Rules](./codenarc-enhanced-classpath-rules.html). It is a standard
+[Ant Path element](https://ant.apache.org/manual/using.html#path).
 
 
 ## Example
