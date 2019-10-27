@@ -15,7 +15,7 @@ your build which is different that your runtime classpath for running your tests
 
 This is an example **JUnit** (4.x) test that runs **CodeNarc**.
 
-```Groovy
+```groovy
     private static final GROOVY_FILES = '**/*.groovy'
     private static final RULESET_FILES = [
             'rulesets/basic.xml',
