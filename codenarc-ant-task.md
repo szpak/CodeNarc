@@ -21,21 +21,21 @@ The **CodeNarc** Ant Task is implemented by the `org.codenarc.ant.CodeNarcTask` 
 |                        | If it is a URL, its path may be optionally URL-encoded. That   |                        |
 |                        | can be useful if the path contains any problematic characters, |                        |
 |                        | such as comma (',') or hash ('#'). For instance:               |                        |
-|                        |    "<file:src/test/resources/RuleSet-,#.txt>"                  |                        |
+|                        |    "file:src/test/resources/RuleSet-,#.txt"                    |                        |
 |                        | can be encoded as:                                             |                        |
-|                        |    "<file:src%2Ftest%2Fresources%2FRuleSet-%2C%23.txt>"        |                        |
-|                        | See `URLEncoder#encode(java.lang.String, java.lang.String).`|                       |
+|                        |    "file:src%2Ftest%2Fresources%2FRuleSet-%2C%23.txt"          |                        |
+|                        | See `URLEncoder#encode(java.lang.String, java.lang.String).`   |                       |
 |------------------------|----------------------------------------------------------------|------------------------|
 | maxPriority1Violations | The maximum number of priority 1 violations allowed before     | NO                     |
-|                        | failing the build (throwing a `BuildException`).           |                        |
+|                        | failing the build (throwing a `BuildException`).               |                        |
 |------------------------|----------------------------------------------------------------|------------------------|
 | maxPriority2Violations | The maximum number of priority 2 violations allowed before     | NO                     |
-|                        | failing the build (throwing a `BuildException`).           |                        |
+|                        | failing the build (throwing a `BuildException`).               |                        |
 |------------------------|----------------------------------------------------------------|------------------------|
 | maxPriority3Violations | The maximum number of priority 3 violations allowed before     | NO                     |
-|                        | failing the build (throwing a `BuildException`).           |                        |
+|                        | failing the build (throwing a `BuildException`).               |                        |
 |------------------------|----------------------------------------------------------------|------------------------|
-| excludeBaseline        | The path to a <baseline violations> report (report type "baseline")| NO                 |
+| excludeBaseline        | The path to a *baseline violations* report (report type "baseline")| NO                 |
 |                        | If set, then all violations specified within that report are   |                        |
 |                        | excluded (filtered) from the current **CodeNarc** run. If      |                        |
 |                        | null/empty, then do nothing. See                               |                        |
@@ -46,9 +46,9 @@ The **CodeNarc** Ant Task is implemented by the `org.codenarc.ant.CodeNarcTask` 
 |                        | {{{./codenarc-enhanced-classpath-rules.html} Enhanced Classpath Rules}}).               |
 |------------------------|----------------------------------------------------------------|------------------------|
 | failOnError            | Boolean that indicates whether to terminate and fail the task  | NO                     |
-|                        | (throwing a `BuildException`) if any errors occur parsing  |                        |
+|                        | (throwing a `BuildException`) if any errors occur parsing      |                        |
 |                        | source files (<true>), or just log  the errors (<false>).      |                        |
-|                        | It defaults to <false>.               |                        |                        |
+|                        | It defaults to <false>.                                        |                        |
 
 
 ## Report Nested Element
