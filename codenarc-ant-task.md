@@ -12,43 +12,37 @@ The **CodeNarc** Ant Task is implemented by the `org.codenarc.ant.CodeNarcTask` 
 
 | Attribute                | Description                                                    | Required               |
 |--------------------------|----------------------------------------------------------------|------------------------|
-| *ruleSetFiles*           | The paths to the Groovy or XML RuleSet definition files. This  | YES                    |
-|                          | can be a single file path, or  multiple paths separated by     |                        |
-|                          | commas. By default, the paths specified are relative to the    |                        |
-|                          | classpath. But each path may be optionally prefixed by any     |                        |
-|                          | of the valid java.net.URL prefixes, such as "file:" (to load   |                        |
-|                          | from a relative or absolute filesystem path), or "http:".      |                        |
-|                          | If it is a URL, its path may be optionally URL-encoded. That   |                        |
-|                          | can be useful if the path contains any problematic characters, |                        |
-|                          | such as comma (',') or hash ('#'). For instance:               |                        |
-|                          |    "file:src/test/resources/RuleSet-,#.txt"                    |                        |
-|                          | can be encoded as:                                             |                        |
-|                          |    "file:src%2Ftest%2Fresources%2FRuleSet-%2C%23.txt"          |                        |
-|                          | See `URLEncoder#encode(java.lang.String, java.lang.String).`   |                        |
-|--------------------------|----------------------------------------------------------------|------------------------|
-| *maxPriority1Violations* | The maximum number of priority 1 violations allowed before     | NO                     |
-|                          | failing the build (throwing a `BuildException`).               |                        |
-|--------------------------|----------------------------------------------------------------|------------------------|
-| *maxPriority2Violations* | The maximum number of priority 2 violations allowed before     | NO                     |
-|                          | failing the build (throwing a `BuildException`).               |                        |
-|--------------------------|----------------------------------------------------------------|------------------------|
-| *maxPriority3Violations* | The maximum number of priority 3 violations allowed before     | NO                     |
-|                          | failing the build (throwing a `BuildException`).               |                        |
-|--------------------------|----------------------------------------------------------------|------------------------|
-| *excludeBaseline*        | The path to a *baseline violations* report (report type "baseline")| NO                 |
-|                          | If set, then all violations specified within that report are   |                        |
-|                          | excluded (filtered) from the current **CodeNarc** run. If      |                        |
-|                          | null/empty, then do nothing. See                               |                        |
-|                          | [Baseline Report](./codenarc-BaselineXmlReportWriter.html).    |                        |
-|--------------------------|----------------------------------------------------------------|------------------------|
-| *classpathRef*           | The reference to a path element which is to be used as         | NO                     |
-|                          | classpath when compiling analysed sources (useful with         |                        |
-|                          | [Enhanced Classpath Rules](./codenarc-enhanced-classpath-rules.html)). |                |
-|--------------------------|----------------------------------------------------------------|------------------------|
-| *failOnError*            | Boolean that indicates whether to terminate and fail the task  | NO                     |
-|                          | (throwing a `BuildException`) if any errors occur parsing      |                        |
-|                          | source files (<true>), or just log  the errors (<false>).      |                        |
-|                          | It defaults to <false>.                                        |                        |
+| *ruleSetFiles*           | The paths to the Groovy or XML RuleSet definition files. This
+|                          | can be a single file path, or  multiple paths separated by   
+|                          | commas. By default, the paths specified are relative to the  
+|                          | classpath. But each path may be optionally prefixed by any   
+|                          | of the valid java.net.URL prefixes, such as "file:" (to load 
+|                          | from a relative or absolute filesystem path), or "http:".    
+|                          | If it is a URL, its path may be optionally URL-encoded. That 
+|                          | can be useful if the path contains any problematic characters,
+|                          | such as comma (',') or hash ('#'). For instance:              
+|                          |    "file:src/test/resources/RuleSet-,#.txt"                   
+|                          | can be encoded as:                                            
+|                          |    "file:src%2Ftest%2Fresources%2FRuleSet-%2C%23.txt"         
+|                          | See `URLEncoder#encode(java.lang.String, java.lang.String).`   | YES                    |
+| *maxPriority1Violations* | The maximum number of priority 1 violations allowed before
+|                          | failing the build (throwing a `BuildException`).               | NO                     |
+| *maxPriority2Violations* | The maximum number of priority 2 violations allowed before 
+|                          | failing the build (throwing a `BuildException`).               | NO                     |
+| *maxPriority3Violations* | The maximum number of priority 3 violations allowed before     
+|                          | failing the build (throwing a `BuildException`).               | NO                     |
+| *excludeBaseline*        | The path to a *baseline violations* report (report type "baseline")
+|                          | If set, then all violations specified within that report are 
+|                          | excluded (filtered) from the current **CodeNarc** run. If    
+|                          | null/empty, then do nothing. See                             
+|                          | [Baseline Report](./codenarc-BaselineXmlReportWriter.html).    | NO                     |
+| *classpathRef*           | The reference to a path element which is to be used as         
+|                          | classpath when compiling analysed sources (useful with         
+|                          | [Enhanced Classpath Rules](./codenarc-enhanced-classpath-rules.html)). | NO             |
+| *failOnError*            | Boolean that indicates whether to terminate and fail the task  
+|                          | (throwing a `BuildException`) if any errors occur parsing      
+|                          | source files (<true>), or just log  the errors (<false>).      
+|                          | It defaults to <false>.                                        | NO                     |
 
 
 ## Report Nested Element
@@ -57,11 +51,11 @@ The **report** nested element defines the format and output file for the analysi
 
 | Attribute            | Description                                                    | Required               |
 |----------------------|----------------------------------------------------------------|------------------------|
-| *type*               | The type of the output report. Must be either one of the       | Yes                    |
-|                      | predefined type names: "html", "xml", "text", "console", "ide" |                        |
-|                      | or else the fully-qualified class name                         |                        |
-|                      | of a class (accessible on the classpath) that implements the   |                        |
-|                      | `org.codenarc.report.ReportWriter` interface.                  |                        |
+| *type*               | The type of the output report. Must be either one of the      
+predefined type names: "html", "xml", "text", "console", "ide"
+or else the fully-qualified class name                        
+of a class (accessible on the classpath) that implements the  
+`org.codenarc.report.ReportWriter` interface.                  | Yes                    |
 
 Notes:
 
