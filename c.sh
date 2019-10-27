@@ -11,8 +11,11 @@ fi
 
 cp src/site/apt/$1.apt $filename
 
-sed -i 's/<<</`/' $filename
-sed -i 's/>>>/`/' $filename
+sed -i 's/<<</`/g' $filename
+sed -i 's/>>>/`/g' $filename
 
-sed -i 's/<</**/' $filename
-sed -i 's/>>/**/' $filename
+sed -i 's/<</**/g' $filename
+sed -i 's/>>/**/g' $filename
+
+sed -i 's/</*/g' $filename
+sed -i 's/>/*/g' $filename
