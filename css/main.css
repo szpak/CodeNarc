@@ -50,14 +50,15 @@ ul.posts li {
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #66ff33; /* Green */
+  background-color: #99ff99; /* Green */
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-left: 4px;
 }
 
 /* The navigation menu links */
 .sidebar a {
-  padding: 4px 4px 4px 4px;
+  padding: 6px 4px 4px 4px;
   text-decoration: none;
   font-size: 15px;
   color: #818181;
