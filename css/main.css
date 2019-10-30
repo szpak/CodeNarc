@@ -69,7 +69,7 @@ h1 {
     /* font-size: 3em; */
     /* font-family:'Helvetica', 'Arial', 'Sans-Serif'; */
 }
-.container h1, h2, h3, h4 {
+.container h1, .container h2, .container h3, .container h4 {
     color: #003380;
 }
 p {

@@ -6,17 +6,14 @@ title: CodeNarc - Creating a RuleSet
 # CodeNarc - Creating a RuleSet
 
 **Contents**
-
-  * [New and Improved Way To Configure a RuleSet](#NewAndImproved)
-
+  * [Preferred Way To Configure a RuleSet](#Preferred)
   * [Creating a Groovy RuleSet File](#CreatingAGroovyRuleSetFile)
-
   * [Creating an XML RuleSet File](#CreatingAnXmlRuleSetFile)
 
-<a name="NewAndImproved"/>
-## New and Improved Way To Configure a RuleSet
+<a name="Preferred"/>
+## Preferred Way To Configure a RuleSet
 
-**NEW!** The preferred way to configure the rules that **CodeNarc** will use is to create a custom
+**NOTE:** The preferred way to configure the rules that **CodeNarc** will use is to create a custom
 *RuleSet* specifying the rule names (i.e., without depending on the *RuleSet* files provided with **CodeNarc**.
 This allows finer control over your custom RuleSet and insulates you from the provided *RuleSets* that can
 (and often do) change from release to release.
