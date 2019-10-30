@@ -9,7 +9,7 @@ title: CodeNarc - Configuring Rules
   * [Configuring Rules Within a RuleSet File](#configuring-rules-within-a-ruleset-file)
   * [Configuring Rules Using a Properties File](#configuring-rules-using-a-properties-file)
   * [Standard Properties for Configuring Rules](#standard-properties-for-configuring-rules)
-  * [Turning Off A Rule](#Turning-Off-A-Rule)
+  * [Turning Off A Rule](#turning-off-a-rule)
   * [Suppressing A Rule From Within Source Code](#suppressing-a-rule-from-within-source-code)
   * [Customizing Rule Descriptions Shown in the HTML Report](#customizing-rule-descriptions-shown-in-the-html-report)
 
