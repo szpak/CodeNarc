@@ -22,6 +22,7 @@ sed -i 's/>/*/g' $filename
 
 sed -i 's/^\* /## /g' $filename
 sed -i 's/^\*\* /### /g' $filename
+sed -i 's/^\*\*\* /#### /g' $filename
 
 sed -i 's/+----------------------------------*/```/g' $filename
 

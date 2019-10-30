@@ -6,12 +6,12 @@ title: CodeNarc - Configuring Rules
 # CodeNarc - Configuring Rules
 
 **Contents**
-  * [Configuring Rules Within a RuleSet File](Configuring-Rules-Within-a-RuleSet-File)
-  * [Configuring Rules Using a Properties File](Configuring-Rules-Using-a-Properties-File)
-  * [Standard Properties for Configuring Rules](Standard-Properties-for-Configuring-Rules)
-  * [Turning Off A Rule](Turning-Off-A-Rule)
-  * [Suppressing A Rule From Within Source Code](Suppressing-A-Rule-From-Within-Source-Code)
-  * [Customizing Rule Descriptions Shown in the HTML Report](Customizing-Rule-Descriptions-Shown-in-the-HTML-Report)
+  * [Configuring Rules Within a RuleSet File](#configuring-rules-within-a-ruleSet-file)
+  * [Configuring Rules Using a Properties File](#configuring-rules-using-a-properties-file)
+  * [Standard Properties for Configuring Rules](#Standard-Properties-for-Configuring-Rules)
+  * [Turning Off A Rule](#Turning-Off-A-Rule)
+  * [Suppressing A Rule From Within Source Code](#Suppressing-A-Rule-From-Within-Source-Code)
+  * [Customizing Rule Descriptions Shown in the HTML Report](#Customizing-Rule-Descriptions-Shown-in-the-HTML-Report)
 
 You can configure rules within the *RuleSet* file or within the "codenarc.properties" file.
 Both of these approaches are described in the sections below.
@@ -165,7 +165,7 @@ include rules that handle imports, blank lines or other file-based rules.
 
 ### Applying Rules Based on File Path or Name
 
-*** Matching Either Filename or Pathname, With Optional Wildcards
+#### Matching Either Filename or Pathname, With Optional Wildcards
 
 The `applyToFileNames` and `doNotApplyToFileNames` properties enable filtering the
 files to which the rule is applied by specifying a comma-separated list of filenames (with optional
@@ -183,7 +183,7 @@ characters ('*' or '?'). The wildcard character '*' matches a sequence of zero o
 in the input string. The wildcard character '?' matches exactly one character in the input string.
 Both properties default to `null`.
 
-*** Matching File Pathnames Against a Regular Expression
+#### Matching File Pathnames Against a Regular Expression
 
 The `applyToFilesMatching` and `doNotApplyToFilesMatching` properties enable filtering
 the files to which the rule is applied by matching a regular expression against the **full pathname**
