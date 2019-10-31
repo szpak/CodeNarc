@@ -9,13 +9,9 @@ title: CodeNarc SortableHtmlReportWriter
 
 The `org.codenarc.report.SortableHtmlReportWriter` class (type="sortable") produces an HTML report
 containing a summary results table and a single table for all violations, which can be sorted in several ways:
-
   * Sort by rule name
-
   * Sort by rule priority
-
   * Sort by rule, in order of the rules that have the greatest number of violations
-
   * Sort by file, in order of the files that have the greatest number of violations
 
 It also includes an optional table of the rules applied, along with their descriptions.
