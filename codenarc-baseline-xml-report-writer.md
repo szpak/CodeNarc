@@ -69,7 +69,7 @@ Note that the report **type** is specified as **"baseline"**.
 ```
 
 
-## <a name="example2"/>" Example 2: How to Use the Baseline Violations File
+## <a name="example2"/> Example 2: How to Use the Baseline Violations File
 
 Here is an example Ant XML build file illustrating configuration of the *"excludeBaseline"* property.
 to use the *baseline violations* file. This will filter out (exclude) a set of *baseline violations*

@@ -14,13 +14,13 @@
 
 .sidebar h2 {
   padding: 2px 4px 2px 4px;
-  margin: 2px 4px 2px 4px;
+  margin-top: 2px;
   font-size: 18px;
 }
 
 .sidebar ul {
   padding: 2px 4px 2px 4px;
-  margin: 2px 4px 2px 4px;
+  margin-top: 2px;
 }
 
 /* The navigation menu links */
