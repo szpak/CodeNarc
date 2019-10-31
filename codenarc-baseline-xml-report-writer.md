@@ -46,7 +46,7 @@ The **option** element is a child of the **report** element and defines a report
 | writeToStandardOut      | Set to `true` to write out the report to *stdout* (`System.out`) instead of writing to a file. |  `false` |
 
 
-## <a href="example1"/>" Example 1: How to Generate the Baseline Violations File
+## <a name="example1"/> Example 1: How to Generate the Baseline Violations File
 
 Here is an example Ant XML build file illustrating configuration of
 `org.codenarc.report.BaselineXmlReportWriter` to generate a *baseline violations* file.
@@ -69,7 +69,7 @@ Note that the report **type** is specified as **"baseline"**.
 ```
 
 
-## <a href="example2"/>" Example 2: How to Use the Baseline Violations File
+## <a name="example2"/>" Example 2: How to Use the Baseline Violations File
 
 Here is an example Ant XML build file illustrating configuration of the *"excludeBaseline"* property.
 to use the *baseline violations* file. This will filter out (exclude) a set of *baseline violations*
