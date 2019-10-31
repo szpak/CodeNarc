@@ -18,6 +18,11 @@
   font-size: 18px;
 }
 
+.sidebar ul {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
 /* The navigation menu links */
 .sidebar a {
   padding: 2px 4px 2px 4px;
