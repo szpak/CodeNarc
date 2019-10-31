@@ -14,16 +14,13 @@
 
 .sidebar h2 {
   padding: 2px 4px 2px 4px;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  margin: 4px 4px 2px 4px;
   font-size: 18px;
 }
 
 .sidebar ul {
-  padding-top: 2px;
-  padding-bottom: 2px;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  padding: 2px 4px 2px 4px;
+  margin: 2px 4px 2px 4px;
 }
 
 /* The navigation menu links */
@@ -37,7 +34,7 @@
 
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
-  color: #f1f1f1;
+  color: #000000;
 }
 
 /* Style page content */
